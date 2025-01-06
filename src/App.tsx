@@ -22,7 +22,7 @@ function App() {
         >
           <TonConnectButton />
         </div>
-        <h1>COIN FLIP GAME</h1>
+        <h2>COIN FLIP GAME</h2>
         <div>
           <img src={dollarLogo} className="logo react" alt="Dollar logo" />
         </div>

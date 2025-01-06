@@ -5,12 +5,15 @@ export const Address = () => {
   const userFriendlyAddress = useTonAddress();
   const [isHead, setIsHead] = useState(true);
   const [isFliping, setIsFliping] = useState(0);
+  const [count, setCount] = useState(0);
+
   const [dots, setDots] = useState("");
 
   const checkResult = () => {
     const randomNumber = Math.floor(Math.random() * 2);
     if ((randomNumber == 0 && isHead) || (randomNumber == 1 && !isHead)) {
       setIsFliping(2);
+      setCount(count + 1);
     } else {
       setIsFliping(3);
     }
@@ -68,7 +71,7 @@ export const Address = () => {
               <button
                 onClick={() => setIsHead(true)}
                 style={{
-                  width: "40%",
+                  width: "50%",
                   backgroundColor: isHead ? "#facd45" : "#808080",
                 }}
               >
@@ -77,7 +80,7 @@ export const Address = () => {
               <button
                 onClick={() => setIsHead(false)}
                 style={{
-                  width: "40%",
+                  width: "50%",
                   backgroundColor: !isHead ? "#facd45" : "#808080",
                 }}
               >
@@ -90,7 +93,7 @@ export const Address = () => {
             <div>
               <button onClick={flipCoin}>Flip the coin</button>
             </div>
-            <p>Double Or Nothing</p>
+            <p>Your point: {count}</p>
           </>
         )}
       </div>
