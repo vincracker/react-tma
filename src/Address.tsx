@@ -45,8 +45,8 @@ export const Address = () => {
               <h2>Flipping{dots}</h2>
             ) : (
               <div>
-                {isFliping == 2 && <h2>You Win!</h2>}
-                {isFliping == 3 && <h2>You Lose!</h2>}
+                {isFliping == 2 && <h2>You win! 🎉 </h2>}
+                {isFliping == 3 && <h2>You lost.. 😢 </h2>}
                 <hr />
                 <br></br>
                 <button
