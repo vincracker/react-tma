@@ -12,23 +12,22 @@ function App() {
   return (
     <TonConnectUIProvider manifestUrl={manifestUrl}>
       <>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            marginTop: "3rem",
+          }}
+        >
+          <TonConnectButton />
+        </div>
         <h1>COIN FLIP GAME</h1>
         <div>
           <img src={dollarLogo} className="logo react" alt="Dollar logo" />
         </div>
         <div className="card">
           <Address />
-
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              marginTop: "3rem",
-            }}
-          >
-            <TonConnectButton />
-          </div>
         </div>
       </>
     </TonConnectUIProvider>
