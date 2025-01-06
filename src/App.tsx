@@ -6,7 +6,7 @@ import { TonConnectButton, TonConnectUIProvider } from "@tonconnect/ui-react";
 import { Address } from "./Address";
 
 const manifestUrl =
-  "https://raw.githubusercontent.com/ton-community/tutorials/main/03-client/test/public/tonconnect-manifest.json";
+  "https://raw.githubusercontent.com/vincracker/react-tma/refs/heads/main/tonconnect-manifest.json";
 
 function App() {
   return (
