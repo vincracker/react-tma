@@ -1,10 +1,8 @@
-import { useState } from "react";
 import dollarLogo from "./assets/dollar-1.svg";
 // import viteLogo from "/vite.svg";
 import "./App.css";
 import { TonConnectButton, TonConnectUIProvider } from "@tonconnect/ui-react";
 // import { Address } from "./Address";
-import { useTonAddress } from "@tonconnect/ui-react";
 import { Address } from "./Address";
 
 const manifestUrl =
