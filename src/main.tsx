@@ -1,7 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import { AppRoot } from "@telegram-apps/telegram-ui";
+import { AppRoot, Placeholder } from "@telegram-apps/telegram-ui";
 import App from "./App.tsx";
 import { init } from "./init.tsx";
 import { retrieveLaunchParams } from "@telegram-apps/sdk-react";
@@ -15,7 +15,9 @@ try {
   root.render(
     <StrictMode>
       <AppRoot>
-        <App />
+        <Placeholder header="Jim-test">
+          <App />
+        </Placeholder>
       </AppRoot>
     </StrictMode>
   );
